@@ -435,6 +435,13 @@ class DataFrame:
     def where(self, cond: Union[Series, DataFrame, _np.ndarray]) -> DataFrame: ...
     @property
     def at(self) -> _AtIndexerFrame: ...
+    def from_dict(
+        self,
+        data: dict,
+        orient: Union[Literal['columns', 'index']] = ...,
+        dtype: Optional[_TypeLike] = ...,
+        columns: Optional[_ListLike] = ...,
+    ) -> DataFrame: ...
 
 # Local Variables:
 # blacken-line-length: 100

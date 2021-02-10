@@ -230,8 +230,8 @@ class Series(Generic[_DType]):
         cond: Union[Series, DataFrame, _np.ndarray],
         other: Union[Series, DataFrame, _np.ndarray, int, float, bool, Callable] = ...,
         inplace: bool = ...,
-        axis: int = ...,
-        level: int = ...,
+        axis: Optional[int] = ...,
+        level: Optional[int] = ...,
         errors: _str = ...,
         try_cast: bool = ...,
     ) -> Series[_DType]: ...
