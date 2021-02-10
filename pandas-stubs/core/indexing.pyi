@@ -38,8 +38,6 @@ class _iLocIndexerFrame:
     def __setitem__(self, idx: Tuple[_IndexType, int], value: Union[float, Series]) -> None: ...
     @overload
     def __setitem__(self, idx: Tuple[int, _IndexType], value: Union[float, Series]) -> None: ...
-    @overload
-    def __setitem__(self, key: any, value: any) -> None: ...  # TODO: Temporary
 
 class _iLocIndexerSeries(Generic[_DType]):
     # get item
