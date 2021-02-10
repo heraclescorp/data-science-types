@@ -435,8 +435,8 @@ class DataFrame:
     def where(self, cond: Union[Series, DataFrame, _np.ndarray]) -> DataFrame: ...
     @property
     def at(self) -> _AtIndexerFrame: ...
+    @staticmethod
     def from_dict(
-        self,
         data: dict,
         orient: Union[Literal['columns', 'index']] = ...,
         dtype: Optional[_TypeLike] = ...,
