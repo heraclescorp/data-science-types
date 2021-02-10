@@ -443,6 +443,7 @@ class DataFrame:
         dtype: Optional[_TypeLike] = ...,
         columns: Optional[_ListLike] = ...,
     ) -> DataFrame: ...
+    def keys(self) -> Index[int]: ...
 
 # Local Variables:
 # blacken-line-length: 100
