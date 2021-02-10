@@ -225,6 +225,16 @@ class Series(Generic[_DType]):
     def value_counts(self, normalize: bool = ...) -> Series[_DType]: ...
     @property
     def at(self) -> _AtIndexerSeries[_DType]: ...
+    def mask(
+        self: Series[_DType],
+        cond: Union[Series, DataFrame, _np.ndarray],
+        other: Union[Series, DataFrame, _np.ndarray, int, float, bool, Callable] = ...,
+        inplace: bool = ...,
+        axis: int = ...,
+        level: int = ...,
+        errors: _str = ...,
+        try_cast: bool = ...,
+    ) -> Series[_DType]: ...
 
 # Local Variables:
 # blacken-line-length: 100
