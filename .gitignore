@@ -11,7 +11,7 @@ __pycache__/
 .mypy_cache/
 
 # generated pyi files
-/matplotlib-stubs/pyplot.pyi
+/matplotlib_stubs/pyplot.pyi
 
 # virtual environments
 venv
