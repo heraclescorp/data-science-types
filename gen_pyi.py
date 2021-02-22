@@ -12,9 +12,9 @@ WARNING_STR = """# ========================================================= #
 
 
 def main() -> None:
-    variables_path = Path(".") / "matplotlib-stubs" / "shared.json"
-    pattern_path = Path(".") / "matplotlib-stubs" / "pyplot.pyi.in"
-    output_path = Path(".") / "matplotlib-stubs" / "pyplot.pyi"
+    variables_path = Path(".") / "matplotlib_stubs" / "shared.json"
+    pattern_path = Path(".") / "matplotlib_stubs" / "pyplot.pyi.in"
+    output_path = Path(".") / "matplotlib_stubs" / "pyplot.pyi"
 
     generator = CodeTemplate.from_file(pattern_path)
     with variables_path.open("r") as fp:
