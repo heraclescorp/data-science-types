@@ -30,6 +30,8 @@ _DType = TypeVar("_DType", str, bool, int, float, object, _np.ndarray, List, cov
 _DType2 = TypeVar("_DType2", str, bool, int, float, object, _np.ndarray, List, covariant=True)
 _Number = TypeVar("_Number", int, float, covariant=True)
 _ListLike = Union[_np.ndarray, List[_DType], Dict[_str, _np.ndarray]]
+_Scalar = Union[str, bool, int, float]
+
 # dtypes for numpy
 _DTypeNp = TypeVar(
     "_DTypeNp",
@@ -235,6 +237,12 @@ class Series(Generic[_DType]):
         errors: _str = ...,
         try_cast: bool = ...,
     ) -> Series[_DType]: ...
+    def between(
+        self: Series[_DType],
+        left: Union[_Scalar, _ListLike],
+        right: Union[_Scalar, _ListLike],
+        inclusive: bool = ...,
+    ) -> Series[bool]: ...,
 
 # Local Variables:
 # blacken-line-length: 100
