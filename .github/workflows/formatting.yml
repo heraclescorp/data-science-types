@@ -27,7 +27,7 @@ jobs:
         python gen_pyi.py
     - name: Format with black (.in file)
       run: |
-        python -m black --check -l 100 -t py36 --pyi --fast matplotlib_stubs/pyplot.pyi.in
+        python -m black --check -l 100 -t py36 --pyi --fast dsTypesMatplotlib/pyplot.pyi.in
     - name: Lint with flake8
       run: |
         flake8 *-stubs

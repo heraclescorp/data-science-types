@@ -1,5 +1,5 @@
 graft tools
 include gen_pyi.py
 include LICENSE
-include matplotlib_stubs/pyplot.pyi.in
-include matplotlib_stubs/shared.json
+include dsTypesMatplotlib/pyplot.pyi.in
+include dsTypesMatplotlib/shared.json
