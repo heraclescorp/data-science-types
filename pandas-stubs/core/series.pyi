@@ -234,7 +234,9 @@ class Series(Generic[_DType]):
         level: Optional[int] = ...,
         errors: _str = ...,
         try_cast: bool = ...,
-    ) -> Series[_DType]: ...
+    ) -> Series[_DType]: ...,
+    @property
+    def dtype(self) -> Type: ...
 
 # Local Variables:
 # blacken-line-length: 100
